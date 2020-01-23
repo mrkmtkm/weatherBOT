@@ -409,20 +409,21 @@ function doPost(e) {
     events.forEach(function (event) {
         switch (event.type) {
             case "message":
-            if(event.message.text=="遊佐町"){
-              userMessage ="999-8437";
+              /////////////////////////////////////////////////
+            if(event.message.text=="自分の好きな場所"){
+              userMessage ="そこの住所";
                 reply(event);
                 }
-                else if(event.message.text=="深谷市"){
-                userMessage ="366-0052";
+                else if(event.message.text=="自分の好きな場所"){
+                userMessage ="そこの住所";
                 reply(event);
                 }
-                 else if(event.message.text=="高崎市"){
-                userMessage ="370-0849";
+                 else if(event.message.text=="自分の好きな場所"){
+                userMessage ="そこの住所";
                 reply(event);
                 }
-                 else if(event.message.text=="さいたま市"){
-                userMessage ="330-0081";
+                 else if(event.message.text=="自分の好きな場所"){
+                userMessage ="そこの住所";
                 reply(event);
                 }
                 
@@ -444,19 +445,20 @@ function reply(e) {
         var country = response.city.country,
             cityName = response.city.name;
             
-            if(e.message.text=="遊佐町"){
+       //////////////////////////////////////////
+            if(e.message.text=="自分の好きな場所"){
               country = "日本";
             cityName = "遊佐町";
                 }
-                else if(e.message.text=="深谷市"){
+                else if(e.message.text=="自分の好きな場所"){
                country = "日本";
             cityName = "深谷市";
                 }
-                 else if(e.message.text=="高崎市"){
+                 else if(e.message.text=="自分の好きな場所"){
                  country = "日本";
             cityName = "高崎市";
                 }
-                 else if(e.message.text=="さいたま市"){
+                 else if(e.message.text=="自分の好きな場所"){
                 country = "日本";
             cityName = "さいたま市";
                 }
